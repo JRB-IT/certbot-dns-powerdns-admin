@@ -22,7 +22,7 @@ install_requires = [
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name='certbot-dns-powerdns',
+    name='certbot-dns-powerdns-admin',
     version=version,
 
     description="PowerDNS DNS Authenticator plugin for Certbot",
@@ -63,7 +63,7 @@ setup(
 
     entry_points={
         'certbot.plugins': [
-            'dns-powerdns = certbot_dns_powerdns.dns_powerdns:Authenticator',
+            'dns-powerdns-admin = certbot_dns_powerdns.dns_powerdns:Authenticator',
         ],
     },
     test_suite='certbot_dns_powerdns',
