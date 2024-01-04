@@ -3,15 +3,15 @@ from os import path
 from setuptools import setup
 from setuptools import find_packages
 
-version = "0.2.2"
+version = "0.2.3"
 
 with open('README.md') as f:
     long_description = f.read()
 
 install_requires = [
-    'acme>=0.31.0',
-    'certbot>=0.31.0',
-    'dns-lexicon>=3.2.4,<=3.5.6',
+    'acme',
+    'certbot',
+    'dns-lexicon',
     'dnspython',
     'mock',
     'setuptools',
